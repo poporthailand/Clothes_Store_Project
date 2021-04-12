@@ -23,15 +23,15 @@ body{
     background: #fffed3;
 }
 .Bodyleft{
-    width: 15%;
+    width: 10%;
     height: 100%;
-    background : saddlebrown;
+    
     float:left;
 }
 .Bodyright{
-    width: 85%;
+    width: 90%;
     height: 100%;
-    background : skyblue;
+    
     float:left;
 }
 h1 {
@@ -72,7 +72,6 @@ button {
 .block {
     width : 25%;
     height: 100%;
-    background: darkgray;
     float: left;
 }
 
@@ -80,6 +79,23 @@ h2 {
     color: #111;
     font-size: 28px;
     margin: 0;
+}
+h3 {
+    color: #111;
+    font-size: 25px;
+    cursor: default;
+    margin: 0;
+    text-align: right;
+}
+img{
+    border-radius: 30px;
+    margin-top: 80px;
+    margin-left: 45px;
+}
+input {
+    width:60px;
+    margin-top: 9px;
+    margin-left: 5px;
 }
 
 .test{

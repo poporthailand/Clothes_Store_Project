@@ -28,7 +28,7 @@
         <div class="Body">
             <div class="Bodyleft">
                 <button class="btn"
-                    style="margin-top: 120px;">
+                    style="margin-top: 120px; background-image: url('../Image/shop/shirt.png');">
                     
                 </button>
                 <button class="btn" style=" background-image: url('../Image/shop/pant.png');"></button>
@@ -38,11 +38,65 @@
 
             <div class="Bodyright">
                 <div class="block">
-                    <div class="record" >
-                        <img src="../Image/shop/lisa.png" style="max-height: 100%;max-width: 100%;;border-radius:25px;">
-                    
-                    </div>
+                        <img src="../Image/shop/lisa.png" >
 
+                        <table align=center border=0 style="margin-top: 10px">
+                            <tr>
+                                <td><h3 >จำนวน :</h3></td>
+                                <td><input type="text" ></td>
+                            </tr>
+                            <tr>
+                                <td><h3 >ราคา :</h3></td>
+                                <td><input type="text" ></td>
+                            </tr>
+                        </table>
+                        
+                        
+                </div>
+
+                <div class="block" >
+                        <img src="../Image/shop/lisa.png" >
+
+                        <table align=center border=0 style="margin-top: 10px">
+                            <tr>
+                                <td><h3 >จำนวน :</h3></td>
+                                <td><input type="text" ></td>
+                            </tr>
+                            <tr>
+                                <td><h3 >ราคา :</h3></td>
+                                <td><input type="text" ></td>
+                            </tr>
+                        </table>
+                </div>
+
+                <div class="block">
+                        <img src="../Image/shop/lisa.png" >
+
+                        <table align=center border=0 style="margin-top: 10px">
+                            <tr>
+                                <td><h3 >จำนวน :</h3></td>
+                                <td><input type="text" ></td>
+                            </tr>
+                            <tr>
+                                <td><h3 >ราคา :</h3></td>
+                                <td><input type="text" ></td>
+                            </tr>
+                        </table>
+                </div>
+
+                <div class="block">
+                        <img src="../Image/shop/lisa.png" >
+
+                        <table align=center border=0 style="margin-top: 10px">
+                            <tr>
+                                <td><h3 >จำนวน :</h3></td>
+                                <td><input type="text" ></td>
+                            </tr>
+                            <tr>
+                                <td><h3 >ราคา :</h3></td>
+                                <td><input type="text" ></td>
+                            </tr>
+                        </table>
                 </div>
 
                 
