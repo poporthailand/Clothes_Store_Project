@@ -19,8 +19,8 @@ body{
 }
 .Body {
     width: 100%;
-    height: 721px;
-    background-image: url('../image/Instagram.jpg');
+    height: 721px ;
+    background-image: url('../image/main/Instagram.jpg');
 }
 h1 {
     color: white;
@@ -28,6 +28,7 @@ h1 {
     letter-spacing: 1px;
     margin-top: 15px;
     text-align: center;
+    cursor: default;
 }
 button {
     float: left;

@@ -14,7 +14,7 @@
 
         <div class="header">
             <pre style="font-size:0px"> </pre>
-            <h1>Vscreen004</h1>
+            <h1 >Vscreen004</h1>
 
         </div>
 
@@ -29,9 +29,9 @@
 
         <div class="Body">
 
-            <button class="btn" style="background: #873395;background-image: url('../Image/shop.png');"></button>
-            <button class="btn" style="background: #fe1c1d;background-image: url('../Image/manage.png');"></button>
-            <button class="btn" style="background: #fdb046;background-image: url('../Image/report.png');"></button>
+            <button class="btn" style="background: #873395;background-image: url('../Image/main/shop.png');"></button>
+            <button class="btn" style="background: #fe1c1d;background-image: url('../Image/main/manage.png');"></button>
+            <button class="btn" style="background: #fdb046;background-image: url('../Image/main/report.png');"></button>
 
 
 
