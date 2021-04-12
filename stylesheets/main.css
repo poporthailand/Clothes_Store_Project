@@ -1,0 +1,73 @@
+body{
+    background: #eee;
+    margin: 0px;
+}
+.container{
+    width: 100%;
+    height: 969px;
+    background: cadetblue;
+}
+.header{
+    width: 100%;
+    height: 200px;
+    background: #430a68;
+}
+.menu {
+    width: 100%;
+    height: 48px;
+    background: #94319e;
+}
+.Body {
+    width: 100%;
+    height: 721px;
+    background-image: url('../image/Instagram.jpg');
+}
+h1 {
+    color: white;
+    font-size: 80px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    text-align: center;
+}
+button {
+    float: left;
+    margin-left: 20px;
+    font-size: 20px;
+    padding: 10px 40px;
+    font-weight: bold;
+    border: 2px solid #111;
+    cursor: pointer;
+}
+.btn {
+    width: 550px;
+    height: 580px;
+    margin-left :65px ;
+    margin-top:40px;
+    background: #873395;
+    border-radius: 20px;
+    border: 1px solid #111;
+    float: left;
+    box-shadow: 3px 8px rgba(0, 0, 0, 0.2);
+    
+}
+h2{
+    font-size: 320px;
+    margin:0px;
+    color: white;
+    float: left;
+}
+h3{
+    font-size: 80px;
+    margin:0px;
+    color: white;
+    float: left;
+}
+h4{
+    font-size: 80px;
+    margin:0px;
+    color: white;
+    float: left;
+}
+
+
+
