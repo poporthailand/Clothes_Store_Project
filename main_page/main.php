@@ -29,9 +29,9 @@
 
         <div class="Body">
 
-            <button class="btn" style="background: #873395;"><h2>s</h2><h3>hop</h3><pre>         </pre><h4>&</h4></button>
-            <button class="btn" style="background: #fe1c1d;">s</button>
-            <button class="btn" style="background: #fdb046;">s</button>
+            <button class="btn" style="background: #873395;background-image: url('../Image/shop.png');"></button>
+            <button class="btn" style="background: #fe1c1d;background-image: url('../Image/manage.png');"></button>
+            <button class="btn" style="background: #fdb046;background-image: url('../Image/report.png');"></button>
 
 
 

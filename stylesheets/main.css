@@ -39,11 +39,14 @@ button {
     cursor: pointer;
 }
 .btn {
+    margin-left: 0;
+    padding: 0;
     width: 550px;
     height: 580px;
     margin-left :65px ;
     margin-top:40px;
-    background: #873395;
+    
+    
     border-radius: 20px;
     border: 1px solid #111;
     float: left;
