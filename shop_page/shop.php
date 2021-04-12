@@ -27,10 +27,15 @@
 
         <div class="Body">
             <div class="Bodyleft">
-
+                <button class="btn" style="margin-top: 120px;background-image: url('../Image/shop/shirt.png');"></button>
+                <button class="btn" style=" background-image: url('../Image/shop/pant.png');"></button>
+                <button class="btn" style=" background-image: url('../Image/shop/etc.png');"></button>
+                <button class="btn" style=" background-image: url('../Image/shop/record.png');"></button>
             </div>
 
-            <div class="Bodyright"></div>
+            <div class="Bodyright">
+                
+            </div>
         </div>
 
     </div>

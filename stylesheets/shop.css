@@ -52,3 +52,22 @@ button {
     cursor: pointer;
     background:#f4bed3;
 }
+.btn {
+    margin-top: 50px;
+    width: 160px;
+    height: 80px;
+    border-radius: 30px;
+    border: 1px solid #111;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+.record {
+    width : 300px;
+    height: 450px;
+    background: slateblue;
+}
+
+h2 {
+    color: #111;
+    font-size: 28px;
+    margin: 0;
+}
