@@ -28,12 +28,13 @@
         </div>
 
         <div class="Body">
-
-            <a href="../shop_page/shop_shirt.php"><button class="btn"
-                    style="background: #873395;background-image: url('../Image/main/shop.png');"></button></a>
-            <a href="../manage_page/manage.php"><button class="btn"
-                    style="background: #fe1c1d;background-image: url('../Image/main/manage.png');"></button></a>
-            <button class="btn" style="background: #fdb046;background-image: url('../Image/main/report.png');"></button>
+            
+            <a href="../shop_page/shop_shirt.php"><button class="btn1"
+                    style="background-image: url('../Image/main/shop.png');"></button></a>
+            
+            <a href="../manage_page/manage.php"><button class="btn2"
+                    style="background-image: url('../Image/main/manage.png');"></button></a>
+            <button class="btn3" style="background-image: url('../Image/main/report.png');"></button>
 
 
 

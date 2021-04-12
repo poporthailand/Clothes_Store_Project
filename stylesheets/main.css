@@ -39,14 +39,19 @@ button {
     border: 2px solid #111;
     cursor: pointer;
 }
-.btn {
+button:hover {
+    background: #8d8d8d;
+}
+
+
+.btn1 {
     margin-left: 0;
     padding: 0;
     width: 550px;
     height: 580px;
     margin-left :65px ;
     margin-top:40px;
-    
+    background: #873395;
     
     border-radius: 20px;
     border: 1px solid #111;
@@ -55,6 +60,49 @@ button {
     
 }
 
+.btn1:hover {
+    background: #61256b;
+}
+
+.btn2 {
+    margin-left: 0;
+    padding: 0;
+    width: 550px;
+    height: 580px;
+    margin-left :65px ;
+    margin-top:40px;
+    background: #fe1c1d;
+    
+    border-radius: 20px;
+    border: 1px solid #111;
+    float: left;
+    box-shadow: 3px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.btn2:hover {
+    background: #c01515;
+}
+
+.btn3 {
+    margin-left: 0;
+    padding: 0;
+    width: 550px;
+    height: 580px;
+    margin-left :65px ;
+    margin-top:40px;
+    background: #fdb046;
+    
+    border-radius: 20px;
+    border: 1px solid #111;
+    float: left;
+    box-shadow: 3px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.btn3:hover {
+    background: #c08636;
+}
 
 
 
