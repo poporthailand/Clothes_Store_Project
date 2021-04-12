@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../stylesheets/shop.css">
+    <link rel="stylesheet" href="../stylesheets/manage.css">
 </head>
 
 <body>
@@ -14,13 +14,13 @@
 
         <div class="header">
         <pre style="font-size:0px"> </pre>
-            <h1>Shop</h1>
+            <h1>Vscreen004</h1>
         </div>
 
         <div class="menu">
         <a href="../main_page/main.php"><button>Main</button></a>
-            <a href="#"><button>Shop</button></a>
-            <a href="../manage_page/manage.php"><button>Manage</button>
+            <a href="../shop_page/shop.php"><button>Shop</button></a>
+            <a href="#"><button>Manage</button>
             <button>Report</button>
             <button>Contact</button>
         </div>
