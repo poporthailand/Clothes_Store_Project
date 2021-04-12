@@ -20,7 +20,7 @@
         <div class="menu">
         <a href="../main_page/main.php"><button>Main</button></a>
             <a href="../shop_page/shop.php"><button>Shop</button></a>
-            <a href="#"><button>Manage</button>
+            <a href="#"><button>Manage</button></a>
             <button>Report</button>
             <button>Contact</button>
         </div>

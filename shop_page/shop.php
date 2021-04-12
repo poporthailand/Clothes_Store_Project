@@ -20,13 +20,17 @@
         <div class="menu">
         <a href="../main_page/main.php"><button>Main</button></a>
             <a href="#"><button>Shop</button></a>
-            <a href="../manage_page/manage.php"><button>Manage</button>
+            <a href="../manage_page/manage.php"><button>Manage</button></a>
             <button>Report</button>
             <button>Contact</button>
         </div>
 
         <div class="Body">
+            <div class="Bodyleft">
 
+            </div>
+
+            <div class="Bodyright"></div>
         </div>
 
     </div>
