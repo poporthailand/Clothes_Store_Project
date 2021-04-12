@@ -27,18 +27,22 @@
 
         <div class="Body">
             <div class="Bodyleft">
+                <a href="shop_shirt.php">
                 <button class="btn"
                     style="margin-top: 120px; background-image: url('../Image/shop/shirt.png');">
                     
-                </button>
-                <button class="btn" style=" background-image: url('../Image/shop/pant.png');"></button>
-                <button class="btn" style=" background-image: url('../Image/shop/etc.png');"></button>
-                <button class="btn" style=" background-image: url('../Image/shop/record.png');"></button>
+                </button></a>
+                <a href="shop_pant.php">
+                <button class="btn" style=" background-image: url('../Image/shop/pant.png');"></button></a>
+                <a href="#">
+                <button class="btn" style="background: #dc81a3; background-image: url('../Image/shop/etc.png');"></button></a>
+                <a href="shop_record.php">
+                <button class="btn" style=" background-image: url('../Image/shop/record.png');"></button></a>
             </div>
 
             <div class="Bodyright">
                 <div class="block">
-                        <img src="../Image/shop/lisa.png" >
+                        <img src="../Image/shop/lisa3.png" >
 
                         <table align=center border=0 style="margin-top: 10px">
                             <tr>
@@ -55,7 +59,7 @@
                 </div>
 
                 <div class="block" >
-                        <img src="../Image/shop/lisa.png" >
+                        <img src="../Image/shop/lisa3.png" >
 
                         <table align=center border=0 style="margin-top: 10px">
                             <tr>
@@ -70,7 +74,7 @@
                 </div>
 
                 <div class="block">
-                        <img src="../Image/shop/lisa.png" >
+                        <img src="../Image/shop/lisa3.png" >
 
                         <table align=center border=0 style="margin-top: 10px">
                             <tr>
@@ -85,7 +89,7 @@
                 </div>
 
                 <div class="block">
-                        <img src="../Image/shop/lisa.png" >
+                        <img src="../Image/shop/lisa3.png" >
 
                         <table align=center border=0 style="margin-top: 10px">
                             <tr>

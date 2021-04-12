@@ -21,7 +21,7 @@
         <div class="menu">
 
             <a href="#"><button>Main</button></a>
-            <a href="../shop_page/shop.php"><button>Shop</button></a>
+            <a href="../shop_page/shop_shirt.php"><button>Shop</button></a>
             <a href="../manage_page/manage.php"><button>Manage</button></a>
             <button>Report</button>
             <button>Contact</button>
@@ -29,7 +29,7 @@
 
         <div class="Body">
 
-            <a href="../shop_page/shop.php"><button class="btn"
+            <a href="../shop_page/shop_shirt.php"><button class="btn"
                     style="background: #873395;background-image: url('../Image/main/shop.png');"></button></a>
             <a href="../manage_page/manage.php"><button class="btn"
                     style="background: #fe1c1d;background-image: url('../Image/main/manage.png');"></button></a>
