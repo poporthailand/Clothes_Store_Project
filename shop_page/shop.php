@@ -28,33 +28,29 @@
         <div class="Body">
             <div class="Bodyleft">
                 <button class="btn"
-                    style="margin-top: 120px;background-image: url('../Image/shop/shirt.png');"></button>
+                    style="margin-top: 120px;">
+                    
+                </button>
                 <button class="btn" style=" background-image: url('../Image/shop/pant.png');"></button>
                 <button class="btn" style=" background-image: url('../Image/shop/etc.png');"></button>
                 <button class="btn" style=" background-image: url('../Image/shop/record.png');"></button>
             </div>
 
             <div class="Bodyright">
-                <div class="number">
-
-                    <div class="record" style="margin-left: 70px;"></div>
+                <div class="block">
+                    <div class="record" >
+                        <img src="../Image/shop/lisa.png" style="max-height: 100%;max-width: 100%;;border-radius:25px;">
+                    
+                    </div>
 
                 </div>
 
-                <div class="number" style="background-color:white" >
-                <div class="record"></div>
-                </div>
-
-                <div class="number">
-                <div class="record"></div>
-                </div>
-                <div class="number" style="background-color:white" >
-                <div class="record"></div>
-                </div>
-                <br>
+                
+                
 
             </div>
         </div>
+        
 
     </div>
 </body>
