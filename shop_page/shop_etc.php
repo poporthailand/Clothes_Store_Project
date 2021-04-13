@@ -36,7 +36,7 @@
                 <button class="btn" style=" background-image: url('../Image/shop/pant.png');"></button></a>
                 <a href="#">
                 <button class="btn" style="background: #dc81a3; background-image: url('../Image/shop/etc.png');"></button></a>
-                <a href="shop_record.php">
+                <a href="shop_order.php">
                 <button class="btn" style=" background-image: url('../Image/shop/record.png');"></button></a>
             </div>
 
