@@ -10,6 +10,7 @@
     <style>
     td{
         text-align:right;
+        cursor: default;
     }
     tr{
         height: 40px;
@@ -51,49 +52,49 @@
 
             <div class="Bodyright">
 
-            <p align=center style="font-size:50px;font-weight:bold;">Make Order</p>
+            <p align=center style="cursor: default;font-size:50px;font-weight:bold;">Make Order</p>
             
             <table align=center style="font-size:25px;font-weight:bold;">
                 
                 <tr>
                     <td>รหัสสินค้า :</td>
                     <td>
-                    <input tpye=text style="width:120px;">
+                    <input type=text style="width:120px;">
                     </td>
                 </tr>
 
                 <tr>
                     <td>รหัสพนักงาน :</td>
                     <td>
-                    <input tpye=text style="width:120px;">
+                    <input type=text style="width:120px;">
                     </td>
                 </tr>
 
                 <tr>
                     <td>รหัสลูกค้า :</td>
                     <td>
-                    <input tpye=text style="width:120px;">
+                    <input type=text style="width:120px;">
                     </td>
                 </tr>
 
                 <tr>
                     <td>รหัสสินค้า :</td>
                     <td>
-                    <input tpye=text style="width:120px;">
+                    <input type=text style="width:120px;">
                     </td>
                 </tr>
 
                 <tr>
                     <td>จำนวนสินค้า :</td>
                     <td>
-                    <input tpye=text style="width:120px;">
+                    <input type=number style="width:120px;">
                     </td>
                 </tr>
 
                 <tr>
                     <td>ราคาต่อหน่วย :</td>
                     <td>
-                    <input tpye=text style="width:120px;">
+                    <input type=number style="width:120px;">
                     </td>
                 </tr>
 

@@ -29,9 +29,11 @@
 
             <div class="block" >
                 <center><div class="inblock" style="background:#ea989c;"><pre> </pre><h2>Customer</h2></div></center>
-                <button class="btn" style="background: #ff959f;margin-left: 80px;">Insert</button>
-                <button class="btn" style="background: #ffa8aa;">Delete</button>
-                <button class="btn" style="background: #ffdebf;">Update</button>
+                <a href="./customer/insert_customer.php">
+                <button class="btn" style="background: #ff959f;margin-left: 120px;">Insert</button></a>
+                <a href="./customer/up&de_customer.php">
+                <button class="btn" style="background: #ffdebf;">Update & Delete</button></a>
+                
             </div>
 
             <div class="block" >
@@ -43,8 +45,8 @@
 
             <div class="block" >
                 <center><div class="inblock" style="background:#ffd3b6;"><pre> </pre><h2>Product</h2></div></center>
-                <button class="btn" style="background: #ff959f;margin-left: 80px;">Insert</button>
-                <button class="btn" style="background: #ffa8aa;">Delete</button>
+
+                <button class="btn" style="background: #ffa8aa;margin-left: 160px;">Delete</button>
                 <button class="btn" style="background: #ffdebf;">Update</button>
             </div>
 
