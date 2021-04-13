@@ -41,7 +41,7 @@
             die('Connection fail');
         }
 
-        $sql = "SELECT * FROM customer";
+        $sql = "SELECT * FROM employee";
         $fetch = mysqli_query($conn, $sql);
 
         for ($x=0; $x < mysqli_num_rows($fetch); $x++) {
@@ -100,43 +100,50 @@
         <a href="../manage.php">
         <button class="btnn" style="float:left;margin-top:40px;float:left;font-size:18px;font-weight: bold;border-radius: 35px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;">Backs</button></a>
         <pre style="font-size:0px;"> </pre>
-        <p style="margin-left:820px;cursor: default;font-size:50px;font-weight:bold;">Insert Customer</p>
+        <p style="margin-left:820px;cursor: default;font-size:50px;font-weight:bold;">Insert Employee</p>
             <form action="insert.php" method=get>
                 <table align=center style="font-size:25px;font-weight:bold;">
                     
                     <tr>
-                        <td>รหัสลูกค้า :</td>
+                        <td>รหัสพนักงาน :</td>
                         <td>
-                        <input type=text name=id_customer value=<?php echo $tmp ?> >
+                        <input type=text name=id_employee value=<?php echo $tmp ?> >
                         </td>
                     </tr>
 
                     <tr>
                         <td>ชื่อ :</td>
                         <td>
-                        <input type=text name=firstname_customer>
+                        <input type=text name=firstname_employee>
                         </td>
                     </tr>
 
                     <tr>
                         <td>นามสกุล :</td>
                         <td>
-                        <input type=text name=lastname_customer>
+                        <input type=text name=lastname_employee>
                         </td>
                     </tr>
 
                     <tr>
                         <td>เพศ :</td>
                         <td style="text-align:left;">
-                    <input type=radio id=gender_customer name=gender_customer value=ชาย> <label for="gender_customer" >ชาย</label>
-                    <input type=radio name=gender_customer value=หญิง> <label >หญิง</label>
+                    <input type=radio id=gender_employee name=gender_employee value=ชาย> <label for="gender_employee" >ชาย</label>
+                    <input type=radio name=gender_employee value=หญิง> <label >หญิง</label>
                         </td>
                     </tr>
 
                     <tr>
                         <td>เบอร์โทรศัพท์ :</td>
                         <td>
-                        <input type=text  name=tel_customer maxlength=10 >
+                        <input type=text  name=tel_employee maxlength=10 >
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>เงินเดือน :</td>
+                        <td>
+                        <input type=text  name=salary_employee maxlength=6 >
                         </td>
                     </tr>
 

@@ -36,14 +36,14 @@
 
 <body>
 <?php 
-    $id_customer = $_GET["id_customer"];
+    $id_employee = $_GET["id_employee"];
     
     $conn = mysqli_connect('localhost', 'root', '', 'clothes_store_project');
         if(!$conn) {
             die('Connection fail');
         }
 
-        $sql = "SELECT * FROM customer WHERE id_customer='$id_customer'";
+        $sql = "SELECT * FROM employee WHERE id_employee='$id_employee'";
         $fetch = mysqli_query($conn, $sql);
         $result = mysqli_fetch_array($fetch);
         
@@ -64,15 +64,15 @@
         </div>
 
         <div class="Body">
-        <a href="up&de_customer.php">
+        <a href="up&de_employee.php">
         <button class="btnn" style="float:left;margin-top:40px;float:left;font-size:18px;font-weight: bold;border-radius: 35px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;">Backs</button></a>
         <pre style="font-size:0px;"> </pre>
-        <p style="margin-left:800px;cursor: default;font-size:50px;font-weight:bold;">Delete Customer</p>
+        <p style="margin-left:800px;cursor: default;font-size:50px;font-weight:bold;">Delete Employee</p>
             
             <table border="0" align=center style="font-size:25px;font-weight:bold;">
                 
                 <tr>
-                    <td>รหัสลูกค้า :</td>
+                    <td>รหัสพนักงาน :</td>
                     <td><pre style="font-size:0"> </pre>
                         <p style="margin-top:5px;margin-bottom:0px;font-weight:normal;font-size:20px;text-align:left;"><?php echo $result[0] ; ?></p>
                     </td>
@@ -107,6 +107,13 @@
                     </td>
                 </tr>
 
+                <tr>
+                    <td>เงินเดือน :</td>
+                    <td>
+                    <p style="margin-top:5px;margin-bottom:0px;font-weight:normal;font-size:20px;text-align:left;"><?php echo $result[5] ; ?></p>
+                    </td>
+                </tr>
+
                 
 
             </table>
@@ -117,7 +124,7 @@
 
                     <td>
                     <?php echo "
-                    <a href=\"delete.php?id_customer=". $result[0]."\"> ";?>
+                    <a href=\"delete.php?id_employee=". $result[0]."\"> ";?>
                     <button class="btnn"  style="float:left;font-size:18px;font-weight: bold;border-radius: 35px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;">Submit</button></a>
                     </td>
 

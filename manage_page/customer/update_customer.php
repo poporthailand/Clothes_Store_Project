@@ -60,7 +60,7 @@
         <a href="../../main_page/main.php"><button>Main</button></a>
             <a href="../../shop_page/shop_shirt.php"><button>Shop</button></a>
             <a href="../manage.php"><button>Manage</button></a>
-            <button>Report</button>
+            <a href="../../report_page/report.php"><button>Report</button></a>
             <button>Contact</button>
         </div>
 
@@ -103,7 +103,7 @@
                     <tr>
                         <td>เบอร์โทรศัพท์ :</td>
                         <td>
-                        <input type=number name=tel_customer value="<?php echo $result[4]?>">
+                        <input type=text maxlength="10" name=tel_customer value="<?php echo $result[4]?>">
                         </td>
                     </tr>
 

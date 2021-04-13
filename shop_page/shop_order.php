@@ -30,7 +30,7 @@
             <a href="../main_page/main.php"><button>Main</button></a>
             <a href="#"><button>Shop</button></a>
             <a href="../manage_page/manage.php"><button>Manage</button></a>
-            <button>Report</button>
+            <a href="../report_page/report.php"><button>Report</button></a>
             <button>Contact</button>
         </div>
 

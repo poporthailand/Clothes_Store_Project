@@ -23,7 +23,7 @@
             <a href="#"><button>Main</button></a>
             <a href="../shop_page/shop_shirt.php"><button>Shop</button></a>
             <a href="../manage_page/manage.php"><button>Manage</button></a>
-            <button>Report</button>
+            <a href="../report_page/report.php"><button>Report</button></a>
             <button>Contact</button>
         </div>
 
@@ -34,6 +34,8 @@
             
             <a href="../manage_page/manage.php"><button class="btn2"
                     style="background-image: url('../Image/main/manage.png');"></button></a>
+
+            <a href="../report_page/report.php">        
             <button class="btn3" style="background-image: url('../Image/main/report.png');"></button>
 
 

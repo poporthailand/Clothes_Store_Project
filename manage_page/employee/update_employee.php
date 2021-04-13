@@ -10,6 +10,7 @@
         td{
             cursor: default;
             text-align:right;
+        
         }
         input {
             margin-left:4px;
@@ -29,58 +30,25 @@
             background: #b67a77;;
         }
         
+        
     </style>
     <link rel="stylesheet" href="../../stylesheets/manage.css">
 </head>
 
 <body>
-    <?php 
-
-        $conn = mysqli_connect('localhost', 'root', '', 'clothes_store_project');
+<?php 
+    $id_employee = $_GET["id_employee"];
+    
+    $conn = mysqli_connect('localhost', 'root', '', 'clothes_store_project');
         if(!$conn) {
             die('Connection fail');
         }
 
-        $sql = "SELECT * FROM customer";
+        $sql = "SELECT * FROM employee WHERE id_employee='$id_employee'";
         $fetch = mysqli_query($conn, $sql);
-
-        for ($x=0; $x < mysqli_num_rows($fetch); $x++) {
-            $result = mysqli_fetch_array($fetch)   ;
-        }
+        $result = mysqli_fetch_array($fetch);
         
-        $tmp = str_split($result[0]);
-
-        $t = true;
-               
-        if($tmp[4] == 9){
-            $tmp[4] = 0;
-            $tmp[3] = $tmp[3]+1;
-            if ($tmp[3] == 10) {
-                $tmp[3] = 0;
-                $tmp[2] = 1;
-            }
-            $t = false;
-        }
-        if($tmp[3] == 9 && $tmp[4] == 9){
-            $tmp[3] = 0;
-            $tmp[2] = $tmp[2]+1;
-            if ($tmp[2] == 10) {
-                $tmp[2] = 0;
-                $tmp[1] = 1;
-            }
-        }
-        if($tmp[2] == 9 && $tmp[3] == 9 && $tmp[4] == 9){
-            $tmp[2] = 0;
-            $tmp[1] = $tmp[1]+1;
-        }
-        if($t) $tmp[4]++;
-        
-        $tmp = join('',$tmp);
-        
-        
-        
-
-    ?>
+?>
     <div class="container">
 
         <div class="header">
@@ -97,46 +65,52 @@
         </div>
 
         <div class="Body">
-        <a href="../manage.php">
+        <a href="up&de_employee.php">
         <button class="btnn" style="float:left;margin-top:40px;float:left;font-size:18px;font-weight: bold;border-radius: 35px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;">Backs</button></a>
         <pre style="font-size:0px;"> </pre>
-        <p style="margin-left:820px;cursor: default;font-size:50px;font-weight:bold;">Insert Customer</p>
-            <form action="insert.php" method=get>
-                <table align=center style="font-size:25px;font-weight:bold;">
+        <p style="margin-left:800px;cursor: default;font-size:50px;font-weight:bold;">Update Employee</p>
+            <form action="update.php" method="get">
+                <table border="0" align=center style="font-size:25px;font-weight:bold;">
                     
                     <tr>
-                        <td>รหัสลูกค้า :</td>
+                        <td>รหัสพนักงาน :</td>
                         <td>
-                        <input type=text name=id_customer value=<?php echo $tmp ?> >
+                        <input type=text readonly name=id_employee value="<?php echo $result[0]?>">
                         </td>
                     </tr>
 
                     <tr>
                         <td>ชื่อ :</td>
                         <td>
-                        <input type=text name=firstname_customer>
+                        <input type=text name=firstname_employee value="<?php echo $result[1]?>">
                         </td>
                     </tr>
 
                     <tr>
                         <td>นามสกุล :</td>
                         <td>
-                        <input type=text name=lastname_customer>
+                        <input type=text name=lastname_employee value="<?php echo $result[2]?>">
                         </td>
                     </tr>
 
                     <tr>
                         <td>เพศ :</td>
-                        <td style="text-align:left;">
-                    <input type=radio id=gender_customer name=gender_customer value=ชาย> <label for="gender_customer" >ชาย</label>
-                    <input type=radio name=gender_customer value=หญิง> <label >หญิง</label>
+                        <td>
+                        <input type=text readonly name=gender_employee value="<?php echo $result[3]?>">
                         </td>
                     </tr>
 
                     <tr>
                         <td>เบอร์โทรศัพท์ :</td>
                         <td>
-                        <input type=text  name=tel_customer maxlength=10 >
+                        <input type=text maxlength="10" name=tel_employee value="<?php echo $result[4]?>">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>เงินเดือน :</td>
+                        <td>
+                        <input type=text maxlength="10" name=salary_employee value="<?php echo $result[5]?>">
                         </td>
                     </tr>
 
@@ -144,8 +118,20 @@
 
                 </table>
                 <br>
-                <center><input class="btnn" type="submit" value=Submit style="font-size:18px;font-weight: bold;border-radius: 35px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;"></center>
+                <table align="center">
+                    <tr>
+                        
+
+                        <td>
+                    
+                        <input type=submit value=Submit  class="btnn" style="float:left;font-size:18px;font-weight: bold;border-radius: 35px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;"></input>
+                        </td>
+                    </tr>
+                </table>
+                    
             </form>
+                        
+            
         </div>
 
     </div>

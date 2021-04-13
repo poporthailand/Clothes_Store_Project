@@ -10,17 +10,17 @@ body{
 .header{
     width: 100%;
     height: 200px;
-    background: #ff8b94;
+    background: #311d40;
 }
 .menu {
     width: 100%;
     height: 48px;
-    background: #ffaaa7;
+    background: #89304e;
 }
 .Body {
     width: 100%;
     height: 721px ;
-    background: #f7ede4;
+    background: #e23e57;
 }
 h1 {
     color: white;
@@ -47,20 +47,51 @@ button {
    
 }
 
-.inblock {
+.inblock1 {
     width: 520px;
    height: 450px;
    margin-top: 60px;
    border-radius: 35px;
    border: 1px solid #111;
    box-shadow: 0 7px rgba(0, 0, 0, 0.1);
+   background:#552340;
+   cursor: pointer;
+}
+.inblock1:hover{
+    background:#3a182c;
+}
+.inblock2 {
+    width: 520px;
+   height: 450px;
+   margin-top: 60px;
+   border-radius: 35px;
+   border: 1px solid #111;
+   box-shadow: 0 7px rgba(0, 0, 0, 0.1);
+   background:#522546;
+   cursor: pointer;
+}
+.inblock2:hover{
+    background:#271221;
+}
+.inblock3 {
+    width: 520px;
+   height: 450px;
+   margin-top: 60px;
+   border-radius: 35px;
+   border: 1px solid #111;
+   box-shadow: 0 7px rgba(0, 0, 0, 0.1);
+   background:#89304e;
+   cursor: pointer;
+}
+.inblock3:hover{
+    background:#69253c;
 }
 
 h2{
     font-size: 60px;
-    margin-top: 150px;
+    margin-top: 0px;
     color: white;
-    cursor:default;
+    cursor:pointer;
     
 }
 
@@ -79,4 +110,8 @@ button:hover{
 }
 .btn:hover {
     opacity: 0.5;
+}
+
+.asd{
+    background:#3a182c;
 }

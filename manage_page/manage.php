@@ -21,7 +21,7 @@
         <a href="../main_page/main.php"><button>Main</button></a>
             <a href="../shop_page/shop_shirt.php"><button>Shop</button></a>
             <a href="#"><button>Manage</button></a>
-            <button>Report</button>
+            <a href="../report_page/report.php"><button>Report</button></a>
             <button>Contact</button>
         </div>
 
@@ -38,9 +38,10 @@
 
             <div class="block" >
                 <center><div class="inblock" style="background:#ffaaa7;"><pre> </pre><h2>Employee</h2></div></center>
-                <button class="btn" style="background: #ff959f;margin-left: 80px;">Insert</button>
-                <button class="btn" style="background: #ffa8aa;">Delete</button>
-                <button class="btn" style="background: #ffdebf;">Update</button>
+                <a href="./employee/insert_employee.php">
+                <button class="btn" style="background: #ff959f;margin-left: 120px;">Insert</button></a>
+                <a href="./employee/up&de_employee.php">
+                <button class="btn" style="background: #ffdebf;">Update & Delete</button></a>
             </div>
 
             <div class="block" >
