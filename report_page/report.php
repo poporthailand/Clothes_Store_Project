@@ -20,6 +20,12 @@
     .inblock3 {
         background:#89304e;
     }
+    .inblock4 {
+        background:#d06489;
+    }
+    .inblock4:hover{
+        background:#b85a7a;
+    }
     </style>
     
 </head>
@@ -42,21 +48,28 @@
 
         <div class="Body">
 
-            <div class="block" >
-            <a href="./customer_report.php"><button class="inblock1" ><pre style="margin:0;font-size:0;" > </pre><h2>Customer</h2></button></a>
+            <div class="block" style="width:25%">
+            <a href="./customer_report.php"><button class="inblock1" style="width:420px;height:350px;"><pre style="margin:0;font-size:0;" > </pre><h2>Customer</h2></button></a>
                 
                 
             </div>
 
-            <div class="block" >
+            <div class="block" style="width:25%">
                 
-                <a href="./employee_report.php"><button class="inblock2" ><pre style="margin:0;font-size:0;" > </pre><h2>Employee</h2></button></a>
+                <a href="./employee_report.php"><button class="inblock2" style="width:420px;height:350px;"><pre style="margin:0;font-size:0;" > </pre><h2>Employee</h2></button></a>
                 
             </div>
 
-            <div class="block" >
+            <div class="block" style="width:25%">
                 
-                <a href="./product_report.php"><button class="inblock3" ><pre style="margin:0;font-size:0;" > </pre><h2>Product</h2></button></a>
+                <a href="./product_report.php"><button class="inblock3" style="width:420px;height:350px;"><pre style="margin:0;font-size:0;" > </pre><h2>Product</h2></button></a>
+
+                
+            </div>
+
+            <div class="block" style="width:25%;">
+                
+                <a href="./history_report.php"><button class="inblock4" style="width:420px;height:350px;"><pre style="margin:0;font-size:0;" > </pre><h2 style="margin-top:30px;">Sale History</h2></button></a>
 
                 
             </div>
