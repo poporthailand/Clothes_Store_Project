@@ -10,6 +10,25 @@
 </head>
 
 <body>
+
+<?php 
+        error_reporting(0);
+        $conn = mysqli_connect('localhost', 'root', '', 'clothes_store_project');
+        if(!$conn) {
+            die('Connection fail');
+        }
+
+        $sql = "SELECT * FROM shirt_product";
+        $fetch = mysqli_query($conn, $sql);
+
+        for ($x=0; $x < mysqli_num_rows($fetch); $x++) {
+            $result[] = mysqli_fetch_array($fetch)   ;
+        }  
+        //print_r($result);
+    
+        
+    ?>
+
     <div class="container">
 
         <div class="header">
@@ -47,12 +66,16 @@
 
                         <table align=center border=0 style="margin-top: 10px">
                             <tr>
+                                <td><h3 >ชื่อ :</h3></td>
+                                <td><p style="cursor:default;font-size:25px;margin:5px 0px 0px 0px;"><?php echo $result[0][1]; ?></p></td>
+                            </tr>
+                            <tr>
                                 <td><h3 >จำนวน :</h3></td>
-                                <td><input type="text" ></td>
+                                <td><p style="cursor:default;font-size:25px;margin:5px 0px 0px 0px;"><?php echo $result[0][3]; ?></p></td>
                             </tr>
                             <tr>
                                 <td><h3 >ราคา :</h3></td>
-                                <td><input type="text" ></td>
+                                <td><p style="cursor:default;font-size:25px;margin:5px 0px 0px 0px;"><?php echo $result[0][2]; ?></p></td>
                             </tr>
                         </table>
                         
@@ -64,12 +87,16 @@
 
                         <table align=center border=0 style="margin-top: 10px">
                             <tr>
+                                <td><h3 >ชื่อ :</h3></td>
+                                <td><p style="cursor:default;font-size:25px;margin:5px 0px 0px 0px;"><?php echo $result[1][1]; ?></p></td>
+                            </tr>
+                            <tr>
                                 <td><h3 >จำนวน :</h3></td>
-                                <td><input type="text" ></td>
+                                <td><p style="cursor:default;font-size:25px;margin:5px 0px 0px 0px;"><?php echo $result[1][3]; ?></p></td>
                             </tr>
                             <tr>
                                 <td><h3 >ราคา :</h3></td>
-                                <td><input type="text" ></td>
+                                <td><p style="cursor:default;font-size:25px;margin:5px 0px 0px 0px;"><?php echo $result[1][2]; ?></p></td>
                             </tr>
                         </table>
                 </div>
@@ -79,12 +106,16 @@
 
                         <table align=center border=0 style="margin-top: 10px">
                             <tr>
+                                <td><h3 >ชื่อ :</h3></td>
+                                <td><p style="cursor:default;font-size:25px;margin:5px 0px 0px 0px;"><?php echo $result[2][1]; ?></p></td>
+                            </tr>
+                            <tr>
                                 <td><h3 >จำนวน :</h3></td>
-                                <td><input type="text" ></td>
+                                <td><p style="cursor:default;font-size:25px;margin:5px 0px 0px 0px;"><?php echo $result[2][3]; ?></p></td>
                             </tr>
                             <tr>
                                 <td><h3 >ราคา :</h3></td>
-                                <td><input type="text" ></td>
+                                <td><p style="cursor:default;font-size:25px;margin:5px 0px 0px 0px;"><?php echo $result[2][2]; ?></p></td>
                             </tr>
                         </table>
                 </div>
@@ -94,12 +125,16 @@
 
                         <table align=center border=0 style="margin-top: 10px">
                             <tr>
+                                <td><h3 >ชื่อ :</h3></td>
+                                <td><p style="cursor:default;font-size:25px;margin:5px 0px 0px 0px;"><?php echo $result[3][1]; ?></p></td>
+                            </tr>
+                            <tr>
                                 <td><h3 >จำนวน :</h3></td>
-                                <td><input type="text" ></td>
+                                <td><p style="cursor:default;font-size:25px;margin:5px 0px 0px 0px;"><?php echo $result[3][3]; ?></p></td>
                             </tr>
                             <tr>
                                 <td><h3 >ราคา :</h3></td>
-                                <td><input type="text" ></td>
+                                <td><p style="cursor:default;font-size:25px;margin:5px 0px 0px 0px;"><?php echo $result[3][2]; ?></p></td>
                             </tr>
                         </table>
                 </div>

@@ -19,6 +19,19 @@
 </head>
 
 <body>
+
+    <?php 
+        error_reporting(0);
+        $conn = mysqli_connect('localhost', 'root', '', 'clothes_store_project');
+        if(!$conn) {
+            die('Connection fail');
+        }
+        //print_r($result);
+        
+    
+        
+    ?>
+
     <div class="container">
 
         <div class="header">
@@ -53,54 +66,78 @@
             <div class="Bodyright">
 
             <p align=center style="cursor: default;font-size:50px;font-weight:bold;">Make Order</p>
-            
+
+            <form action="make_order.php" method=get></form>
+
             <table align=center style="font-size:25px;font-weight:bold;">
+
+                
                 
                 <tr>
                     <td>รหัสสินค้า :</td>
                     <td>
-                    <input type=text style="width:120px;">
+                    <input name=id_product type=text style="width:120px;">
                     </td>
                 </tr>
+
+                <?php 
+                
+                    $sql = "SELECT * FROM employee";
+                    $fetch = mysqli_query($conn, $sql);
+
+                    for ($x=0; $x < mysqli_num_rows($fetch); $x++) {
+                        $result1[] = mysqli_fetch_array($fetch)   ;
+                    }  
+                ?>
 
                 <tr>
                     <td>รหัสพนักงาน :</td>
-                    <td>
-                    <input type=text style="width:120px;">
+                    <td style="text-align:center;">
+                        <select name=id_employee style="width: 120px;">
+                        <?php for($x = 0 ; $x < count($result1) ; $x++){ ?>
+                            <option value=<?php echo $result1[$x][0]; ?> > <?php echo $result1[$x][0]; ?> </option>
+                            <?php } ?>
+                        </select>
                     </td>
                 </tr>
+
+                <?php 
+                
+                    $sql = "SELECT * FROM customer";
+                    $fetch = mysqli_query($conn, $sql);
+
+                    for ($x=0; $x < mysqli_num_rows($fetch); $x++) {
+                        $result2[] = mysqli_fetch_array($fetch)   ;
+                    }  
+                    
+                ?>
 
                 <tr>
                     <td>รหัสลูกค้า :</td>
-                    <td>
-                    <input type=text style="width:120px;">
+                    <td style="text-align:center;">
+                    <select name=id_customer style="width: 120px;">
+                        <?php for($x = 0 ; $x < count($result2) ; $x++){ ?>
+                            <option value=<?php echo $result2[$x][0]; ?> > <?php echo $result2[$x][0]; ?> </option>
+                            <?php } ?>
+                        </select>
                     </td>
                 </tr>
 
-                <tr>
-                    <td>รหัสสินค้า :</td>
-                    <td>
-                    <input type=text style="width:120px;">
-                    </td>
-                </tr>
 
                 <tr>
                     <td>จำนวนสินค้า :</td>
                     <td>
-                    <input type=number style="width:120px;">
+                    <input type=number style="width:120px;" max=10 min=1>
                     </td>
                 </tr>
 
-                <tr>
-                    <td>ราคาต่อหน่วย :</td>
-                    <td>
-                    <input type=number style="width:120px;">
-                    </td>
-                </tr>
 
             </table>
             <br>
             <center><input type="submit" value=Make style="cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;background:#a9d8ea;"></center>
+
+            </form>
+
             </div>
         </div>
         
