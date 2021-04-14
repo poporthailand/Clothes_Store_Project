@@ -89,7 +89,7 @@
             <a href="../shop_page/shop_shirt.php"><button>Shop</button></a>
             <a href="../manage_page/manage.php"><button>Manage</button></a>
             <a href="./report.php"><button>Report</button></a>
-            <button>Contact</button>
+            <a href="https://web.facebook.com/VScreen_304-540283122716828/" target="_blank"><button>Contact</button></a>
         </div>
 
         <div class="Body" style="background:#00adb4;height:1293px;">

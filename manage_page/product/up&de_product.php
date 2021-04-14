@@ -88,10 +88,10 @@
             <a href="../../shop_page/shop_shirt.php"><button>Shop</button></a>
             <a href="../manage.php"><button>Manage</button></a>
             <a href="../../report_page/report.php"><button>Report</button></a>
-            <button>Contact</button>
+            <a href="https://web.facebook.com/VScreen_304-540283122716828/" target="_blank"><button>Contact</button></a>
         </div>
 
-        <div class="Body" >
+        <div class="Body" style="height:1430px;">
         <a href="../manage.php">
         <button class="btnn1" style="float:left;margin-top:40px;float:left;font-size:18px;font-weight: bold;border-radius: 35px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;">Backs</button></a>
         <pre style="font-size:0px;"> </pre>
