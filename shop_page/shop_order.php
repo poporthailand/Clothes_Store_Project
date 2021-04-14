@@ -67,16 +67,43 @@
 
             <p align=center style="cursor: default;font-size:50px;font-weight:bold;">Make Order</p>
 
-            <form action="make_order.php" method=get></form>
+            <form action="make_order.php" method=get>
 
             <table align=center style="font-size:25px;font-weight:bold;">
 
                 
-                
+                <?php 
+                    
+                    $sql = "SELECT * FROM shirt_product";
+                    $fetch = mysqli_query($conn, $sql);
+
+                    for ($x=0; $x < mysqli_num_rows($fetch); $x++) {
+                        $result[] = mysqli_fetch_array($fetch)   ;
+                    }  
+
+                    $sql = "SELECT * FROM pant_product";
+                    $fetch = mysqli_query($conn, $sql);
+
+                    for ($x=0; $x < mysqli_num_rows($fetch); $x++) {
+                        $result[] = mysqli_fetch_array($fetch)   ;
+                    }  
+
+                    $sql = "SELECT * FROM etc_product";
+                    $fetch = mysqli_query($conn, $sql);
+
+                    for ($x=0; $x < mysqli_num_rows($fetch); $x++) {
+                        $result[] = mysqli_fetch_array($fetch)   ;
+                    }  
+                ?>
                 <tr>
-                    <td>รหัสสินค้า :</td>
-                    <td>
-                    <input name=id_product type=text style="width:120px;">
+                    <td>สินค้า :</td>
+                    <td style="text-align:center;">
+                        <select name=id_product style="width: 120px;">
+                          <?php for($x = 0 ; $x < count($result) ; $x++){ ?>
+                             <option value=<?php echo $result[$x][0]; ?> > <?php echo $result[$x][1]; ?> </option>
+                            <?php } ?>
+
+                         </select>
                     </td>
                 </tr>
 
@@ -127,7 +154,7 @@
                 <tr>
                     <td>จำนวนสินค้า :</td>
                     <td>
-                    <input type=number style="width:120px;" max=10 min=1>
+                    <input name=quantity_product type=number style="width:120px;" max=10 min=1>
                     </td>
                 </tr>
 
