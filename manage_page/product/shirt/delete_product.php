@@ -68,7 +68,7 @@
         <a href="../up&de_product.php">
         <button class="btnn" style="float:left;margin-top:40px;float:left;font-size:18px;font-weight: bold;border-radius: 35px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;">Backs</button></a>
         <pre style="font-size:0px;"> </pre>
-        <p style="margin-left:800px;cursor: default;font-size:50px;font-weight:bold;">Delete Employee</p>
+        <p style="margin-left:800px;cursor: default;font-size:50px;font-weight:bold;">Delete Shirt Product</p>
            
                 <table border="0" align=center style="font-size:25px;font-weight:bold;">
                     

@@ -157,7 +157,7 @@
             
                 <?php 
                     $x = 0;
-                    while($x < count($result)){
+                    while($x < count($result1)){
                         
                     echo "<tr>
                     <td style=\"text-align:center;\">".($x+1)."</td>
@@ -201,7 +201,7 @@
             
                 <?php 
                     $x = 0;
-                    while($x < count($result)){
+                    while($x < count($result2)){
                         
                     echo "<tr>
                     <td style=\"text-align:center;\">".($x+1)."</td>

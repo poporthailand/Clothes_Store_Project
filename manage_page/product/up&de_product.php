@@ -76,11 +76,11 @@
       
         
     ?>
-    <div class="container">
+    <div class="container" >
 
-        <div class="header">
+        <div class="header" >
         <pre style="font-size:0px"> </pre>
-            <h1>Vscreen004</h1>
+            <h1 >Vscreen004</h1>
         </div>
 
         <div class="menu">
@@ -91,8 +91,8 @@
             <button>Contact</button>
         </div>
 
-        <div class="Body">
-        <a href="../../manage.php">
+        <div class="Body" >
+        <a href="../manage.php">
         <button class="btnn1" style="float:left;margin-top:40px;float:left;font-size:18px;font-weight: bold;border-radius: 35px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;">Backs</button></a>
         <pre style="font-size:0px;"> </pre>
         <p style="margin-left:710px;cursor: default;font-size:50px;font-weight:bold;">Update&Delete Shirt Product</p>
@@ -128,13 +128,109 @@
                 </tr>"; 
                         $x++;
                     }
+
+                    
+                ?>
+
+            </table>
+    <?php
+
+    
+    
+            $sql = "SELECT * FROM pant_product";
+            $fetch = mysqli_query($conn, $sql);
+
+            for ($x=0; $x < mysqli_num_rows($fetch); $x++) {
+            $result1[] = mysqli_fetch_array($fetch)   ;
+         }
+    ?>
+            <p style="margin-top:120px;margin-left:710px;cursor: default;font-size:50px;font-weight:bold;">Update&Delete Pant Product</p>
+            
+            <table  align=center style= "width: 1000px;">
+                <tr style="font-size:25px;font-weight:bold;">
+                    <th>#</th>
+                    <th>Id_Product</th>
+                    <th>Name_Product</th>
+                    <th>Unitprice_product</th>
+                    <th>Quantity_product</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+
+                
+            
+                <?php 
+                    $x = 0;
+                    while($x < count($result1)){
+                        
+                    echo "<tr>
+                    <td style=\"text-align:center;\">".($x+1)."</td>
+                    <td>".$result1[$x][0]."</td>
+                    <td>".$result1[$x][1]."</td>
+                    <td>".$result1[$x][2]."</td>
+                    <td>".$result1[$x][3]."</td>
+                    <td><a href=\"./pant/update_product.php?id_product=".$result1[$x][0]."\"><button class=btnn style=\"border-radius: 10px;border: 1px solid #111;padding: 0px;
+                    margin:0;height:30px;width:80px;font-size: 15px;\">Update</button></a></td>
+
+                    <td><a href=\"./pant/delete_product.php?id_product=".$result1[$x][0]."\"><button class=btnn style=\"border-radius: 10px;border: 1px solid #111;padding: 0px;
+                    margin:0;height:30px;width:80px;font-size: 15px;\">Delete</button></a></td>
+                </tr>"; 
+                        $x++;
+                    }
                 ?>
 
                 
 
             </table>
             
+            <?php
+            $sql = "SELECT * FROM etc_product";
+            $fetch = mysqli_query($conn, $sql);
+
+            for ($x=0; $x < mysqli_num_rows($fetch); $x++) {
+            $result2[] = mysqli_fetch_array($fetch)   ;
+         }
+    ?>
+            <p style="margin-top:120px;margin-left:710px;cursor: default;font-size:50px;font-weight:bold;">Update&Delete Etc Product</p>
             
+            <table  align=center style= "width: 1000px;">
+                <tr style="font-size:25px;font-weight:bold;">
+                    <th>#</th>
+                    <th>Id_Product</th>
+                    <th>Name_Product</th>
+                    <th>Unitprice_product</th>
+                    <th>Quantity_product</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+
+                
+            
+                <?php 
+                    $x = 0;
+                    while($x < count($result2)){
+                        
+                    echo "<tr>
+                    <td style=\"text-align:center;\">".($x+1)."</td>
+                    <td>".$result2[$x][0]."</td>
+                    <td>".$result2[$x][1]."</td>
+                    <td>".$result2[$x][2]."</td>
+                    <td>".$result2[$x][3]."</td>
+                    <td><a href=\"./etc/update_product.php?id_product=".$result2[$x][0]."\"><button class=btnn style=\"border-radius: 10px;border: 1px solid #111;padding: 0px;
+                    margin:0;height:30px;width:80px;font-size: 15px;\">Update</button></a></td>
+
+                    <td><a href=\"./etc/delete_product.php?id_product=".$result2[$x][0]."\"><button class=btnn style=\"border-radius: 10px;border: 1px solid #111;padding: 0px;
+                    margin:0;height:30px;width:80px;font-size: 15px;\">Delete</button></a></td>
+                </tr>"; 
+                        $x++;
+                    }
+                ?>
+
+                
+
+            </table>
+            
+            <pre style="margin-top:50px;"> </pre>
 
             
         </div>

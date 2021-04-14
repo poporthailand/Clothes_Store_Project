@@ -44,7 +44,7 @@
             die('Connection fail');
         }
 
-        $sql = "SELECT * FROM shirt_product WHERE id_product='$id_product'";
+        $sql = "SELECT * FROM pant_product WHERE id_product='$id_product'";
         $fetch = mysqli_query($conn, $sql);
         $result = mysqli_fetch_array($fetch);
         
@@ -68,7 +68,7 @@
         <a href="../up&de_product.php">
         <button class="btnn" style="float:left;margin-top:40px;float:left;font-size:18px;font-weight: bold;border-radius: 35px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;">Backs</button></a>
         <pre style="font-size:0px;"> </pre>
-        <p style="margin-left:800px;cursor: default;font-size:50px;font-weight:bold;">Update Shirt Product</p>
+        <p style="margin-left:800px;cursor: default;font-size:50px;font-weight:bold;">Update Pant Product</p>
             <form action="update.php" method="get">
                 <table border="0" align=center style="font-size:25px;font-weight:bold;">
                     
