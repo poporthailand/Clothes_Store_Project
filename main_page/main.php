@@ -7,18 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../stylesheets/main.css">
+    <style>
+    .sdf{
+        background-image: url('../image/main/bg.png')
+    }
+    </style>
 </head>
 
 <body>
     <div class="container">
 
-        <div class="header">
+        <div class="header" style="background-image: url('../image/main/bg.png')">
             <pre style="font-size:0px"> </pre>
-            <h1>Vscreen004</h1>
+            <h1></h1>
 
         </div>
 
-        <div class="menu">
+        <div class="menu" style="background: #202253;">
 
             <a href="#"><button>Main</button></a>
             <a href="../shop_page/shop_shirt.php"><button>Shop</button></a>
