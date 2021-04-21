@@ -15,6 +15,12 @@
     tr{
         height: 40px;
     }
+    .make {
+        background:#E4D1A7;
+    }
+    .make:hover {
+        background:#E5C78B;
+    }
     </style>
 </head>
 
@@ -63,9 +69,11 @@
                 <button class="btn" style="background: #dc81a3; background-image: url('../Image/shop/record.png');"></button></a>
             </div>
 
-            <div class="Bodyright">
-
-            <p align=center style="cursor: default;font-size:50px;font-weight:bold;">Make Order</p>
+            <div class="Bodyright" align=center>
+           <pre> </pre>
+            <div style="border-radius:20px;margin-top:60px;background:#E3DBC8;width:550px;height:450px;">
+            <pre> </pre>
+            <p align=center style="margin-top:20px;cursor: default;font-size:50px;font-weight:bold;">Make Order</pre>
 
             <form action="make_order.php" method=get>
 
@@ -161,15 +169,18 @@
 
             </table>
             <br>
-            <center><input type="submit" value=Make style="cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;background:#a9d8ea;"></center>
-
+            <center><input class="make" type="submit" value=Make style="font-size:18px;border-radius:20px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;"></center>
+                           
             </form>
-
+           
+            </div>
             </div>
         </div>
         
 
     </div>
+
 </body>
+
 
 </html>

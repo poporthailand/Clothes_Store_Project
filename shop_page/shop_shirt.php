@@ -62,7 +62,7 @@
 
             <div class="Bodyright">
                 <div class="block">
-                        <img src="../Image/shop/lisa1.png" >
+                        <img src="../Image/shop/s1.png" >
 
                         <table align=center border=0 style="margin-top: 10px">
                             <tr>
@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="block" >
-                        <img src="../Image/shop/lisa1.png" >
+                        <img src="../Image/shop/s2.png" >
 
                         <table align=center border=0 style="margin-top: 10px">
                             <tr>
@@ -102,7 +102,7 @@
                 </div>
 
                 <div class="block">
-                        <img src="../Image/shop/lisa1.png" >
+                        <img src="../Image/shop/s3.png" >
 
                         <table align=center border=0 style="margin-top: 10px">
                             <tr>
@@ -121,7 +121,7 @@
                 </div>
 
                 <div class="block">
-                        <img src="../Image/shop/lisa1.png" >
+                        <img src="../Image/shop/s4.png" >
 
                         <table align=center border=0 style="margin-top: 10px">
                             <tr>
