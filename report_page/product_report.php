@@ -92,7 +92,7 @@
             <a href="https://web.facebook.com/VScreen_304-540283122716828/" target="_blank"><button>Contact</button></a>
         </div>
 
-        <div class="Body" style="background:#00adb4;height:1293px;">
+        <div class="Body" style="background:#00adb4;height:1303px;">
         <a href="report.php">
         <button class="btnn1" style="float:left;margin-top:40px;float:left;font-size:18px;font-weight: bold;border-radius: 35px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;">Backs</button></a>
         <pre style="font-size:0px;"> </pre>
@@ -218,7 +218,7 @@
                 
 
             </table>
-            <pre style="margin-top:50px;"> </pre>
+            <pre style="margin-top:30px;"> </pre>
             
 
             

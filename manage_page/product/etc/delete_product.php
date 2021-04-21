@@ -68,59 +68,62 @@
         <a href="../up&de_product.php">
         <button class="btnn" style="float:left;margin-top:40px;float:left;font-size:18px;font-weight: bold;border-radius: 35px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;">Backs</button></a>
         <pre style="font-size:0px;"> </pre>
-        <p style="margin-left:800px;cursor: default;font-size:50px;font-weight:bold;">Delete Etc Product</p>
-           
-                <table border="0" align=center style="font-size:25px;font-weight:bold;">
+            <center>
+                <div style="border-radius:30px;margin-top:50px;background:#dbd2c9;padding: 50px;width:600px">
+                    <p style="margin-top:0px;cursor: default;font-size:50px;font-weight:bold;">Delete Etc Product</p>
                     
-                    <tr>
-                        <td>รหัสสินค้า :</td>
-                        <td>
-                        <p style="margin-top:5px;margin-bottom:0px;font-weight:normal;font-size:20px;text-align:left;"><?php echo $result[0] ; ?></p>
-                        </td>
-                    </tr>
+                            <table border="0" align=center style="font-size:25px;font-weight:bold;">
+                                
+                                <tr>
+                                    <td>รหัสสินค้า :</td>
+                                    <td>
+                                    <p style="margin-top:5px;margin-bottom:0px;font-weight:normal;font-size:20px;text-align:left;"><?php echo $result[0] ; ?></p>
+                                    </td>
+                                </tr>
 
-                    <tr>
-                        <td>ชื่อ :</td>
-                        <td>
-                        <p style="margin-top:5px;margin-bottom:0px;font-weight:normal;font-size:20px;text-align:left;"><?php echo $result[1] ; ?></p>
-                        </td>
-                    </tr>
+                                <tr>
+                                    <td>ชื่อ :</td>
+                                    <td>
+                                    <p style="margin-top:5px;margin-bottom:0px;font-weight:normal;font-size:20px;text-align:left;"><?php echo $result[1] ; ?></p>
+                                    </td>
+                                </tr>
 
-                    <tr>
-                        <td>ราคา :</td>
-                        <td>
-                        <p style="margin-top:5px;margin-bottom:0px;font-weight:normal;font-size:20px;text-align:left;"><?php echo $result[2] ; ?></p>
-                        </td>
-                    </tr>
+                                <tr>
+                                    <td>ราคา :</td>
+                                    <td>
+                                    <p style="margin-top:5px;margin-bottom:0px;font-weight:normal;font-size:20px;text-align:left;"><?php echo $result[2] ; ?></p>
+                                    </td>
+                                </tr>
 
-                    <tr>
-                        <td>จำนวน :</td>
-                        <td>
-                        <p style="margin-top:5px;margin-bottom:0px;font-weight:normal;font-size:20px;text-align:left;"><?php echo $result[3] ; ?></p>
-                        </td>
-                    </tr>
+                                <tr>
+                                    <td>จำนวน :</td>
+                                    <td>
+                                    <p style="margin-top:5px;margin-bottom:0px;font-weight:normal;font-size:20px;text-align:left;"><?php echo $result[3] ; ?></p>
+                                    </td>
+                                </tr>
 
-                    
+                                
 
-                    
+                                
 
-                </table>
-                <br>
-                <table align="center">
-                <tr>
+                            </table>
+                            <br>
+                            <table align="center">
+                            <tr>
 
 
-                    <td>
-                    <?php echo "
-                    <a href=\"delete.php?id_product=". $result[0]."\"> ";?>
-                    <button class="btnn"  style="float:left;font-size:18px;font-weight: bold;border-radius: 35px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;">Submit</button></a>
-                    </td>
+                                <td>
+                                <?php echo "
+                                <a href=\"delete.php?id_product=". $result[0]."\"> ";?>
+                                <button class="btnn"  style="float:left;font-size:18px;font-weight: bold;border-radius: 35px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;">Submit</button></a>
+                                </td>
 
-                </tr>
-            </table>
-                    
-            </form>
-                        
+                            </tr>
+                        </table>
+                                
+                        </form>
+                    </div>
+                </center>
             
         </div>
 

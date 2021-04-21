@@ -68,70 +68,72 @@
         <a href="up&de_employee.php">
         <button class="btnn" style="float:left;margin-top:40px;float:left;font-size:18px;font-weight: bold;border-radius: 35px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;">Backs</button></a>
         <pre style="font-size:0px;"> </pre>
-        <p style="margin-left:800px;cursor: default;font-size:50px;font-weight:bold;">Update Employee</p>
-            <form action="update.php" method="get">
-                <table border="0" align=center style="font-size:25px;font-weight:bold;">
-                    
-                    <tr>
-                        <td>รหัสพนักงาน :</td>
-                        <td>
-                        <input type=text readonly name=id_employee value="<?php echo $result[0]?>">
-                        </td>
-                    </tr>
+            <center>
+                <div style="border-radius:30px;margin-top:50px;background:#dbd2c9;padding: 50px;width:600px">
+                    <p style="margin-top:0px;cursor: default;font-size:50px;font-weight:bold;">Update Employee</p>
+                        <form action="update.php" method="get">
+                            <table border="0" align=center style="font-size:25px;font-weight:bold;">
+                                
+                                <tr>
+                                    <td>รหัสพนักงาน :</td>
+                                    <td>
+                                    <input type=text readonly name=id_employee value="<?php echo $result[0]?>">
+                                    </td>
+                                </tr>
 
-                    <tr>
-                        <td>ชื่อ :</td>
-                        <td>
-                        <input type=text name=firstname_employee value="<?php echo $result[1]?>">
-                        </td>
-                    </tr>
+                                <tr>
+                                    <td>ชื่อ :</td>
+                                    <td>
+                                    <input type=text name=firstname_employee value="<?php echo $result[1]?>">
+                                    </td>
+                                </tr>
 
-                    <tr>
-                        <td>นามสกุล :</td>
-                        <td>
-                        <input type=text name=lastname_employee value="<?php echo $result[2]?>">
-                        </td>
-                    </tr>
+                                <tr>
+                                    <td>นามสกุล :</td>
+                                    <td>
+                                    <input type=text name=lastname_employee value="<?php echo $result[2]?>">
+                                    </td>
+                                </tr>
 
-                    <tr>
-                        <td>เพศ :</td>
-                        <td>
-                        <input type=text readonly name=gender_employee value="<?php echo $result[3]?>">
-                        </td>
-                    </tr>
+                                <tr>
+                                    <td>เพศ :</td>
+                                    <td>
+                                    <input type=text readonly name=gender_employee value="<?php echo $result[3]?>">
+                                    </td>
+                                </tr>
 
-                    <tr>
-                        <td>เบอร์โทรศัพท์ :</td>
-                        <td>
-                        <input type=text maxlength="10" name=tel_employee value="<?php echo $result[4]?>">
-                        </td>
-                    </tr>
+                                <tr>
+                                    <td>เบอร์โทรศัพท์ :</td>
+                                    <td>
+                                    <input type=text maxlength="10" name=tel_employee value="<?php echo $result[4]?>">
+                                    </td>
+                                </tr>
 
-                    <tr>
-                        <td>เงินเดือน :</td>
-                        <td>
-                        <input type=text maxlength="10" name=salary_employee value="<?php echo $result[5]?>">
-                        </td>
-                    </tr>
+                                <tr>
+                                    <td>เงินเดือน :</td>
+                                    <td>
+                                    <input type=text maxlength="10" name=salary_employee value="<?php echo $result[5]?>">
+                                    </td>
+                                </tr>
 
-                    
+                                
 
-                </table>
-                <br>
-                <table align="center">
-                    <tr>
-                        
+                            </table>
+                            <br>
+                            <table align="center">
+                                <tr>
+                                    
 
-                        <td>
-                    
-                        <input type=submit value=Submit  class="btnn" style="float:left;font-size:18px;font-weight: bold;border-radius: 35px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;"></input>
-                        </td>
-                    </tr>
-                </table>
-                    
-            </form>
-                        
-            
+                                    <td>
+                                
+                                    <input type=submit value=Submit  class="btnn" style="float:left;font-size:18px;font-weight: bold;border-radius: 35px;cursor: pointer;font-weight: bold;box-shadow:0 2px rgba(0, 0, 0, 0.2);border: 1px solid #111;width:150px;height:50px;"></input>
+                                    </td>
+                                </tr>
+                            </table>
+                                
+                        </form>
+                    </div>
+                </center>
         </div>
 
     </div>
