@@ -69,7 +69,7 @@
                 <button class="btn" style="background: #dc81a3; background-image: url('../Image/shop/record.png');"></button></a>
             </div>
 
-            <div class="Bodyright" align=center>
+            <div class="Bodyright" align=center style="background: #fffed3;">
            <pre> </pre>
             <div style="border-radius:20px;margin-top:60px;background:#E3DBC8;width:550px;height:450px;">
             <pre> </pre>
