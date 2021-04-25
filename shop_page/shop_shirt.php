@@ -60,7 +60,7 @@
                 <button class="btn" style=" background-image: url('../Image/shop/record.png');"></button></a>
             </div>
 
-            <div class="Bodyright">
+            <div class="Bodyright" >
                 <div class="block">
                         <img src="../Image/shop/s1.png" >
 
